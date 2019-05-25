@@ -21,22 +21,21 @@
 </head>
 
 <style type="text/css">
-  
-.img-fluid{
-  margin-right: 15px;
-}
-.logoCima{
-  position: relative;
-  margin-right: 1150px;
-}
+
 .Nome{
   position: relative;
   margin-left: 10px;
   font-size: 1.5em;
 }
+
 .btn{
   position: relative;
-  margin-left: 70px;
+  margin-left: 5%;
+}
+
+.btn-mobile{
+  position: relative;
+  margin-left: 5%;
 }
 .naoesta{
   position: relative;
@@ -58,6 +57,7 @@
     width: 30%;
   }
 }
+
 </style>
 
 <body id="page-top">
@@ -73,29 +73,11 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-gradient-primary topbar mb-4 static-top shadow navbar-inverse">
-          <div ><img src="img/logobranca.png" class="logomarca"></div>
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
+          <!-- <div class="container-fluid"><img src="img/logobranca.png" class="logomarca"></div> -->
+
           <!-- Topbar Navbar -->
           <div class="container-fluid">
           <ul class="navbar-nav ml-auto">
-
-              <!-- Dropdown - Messages -->
-            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
@@ -353,15 +335,14 @@
                 <div class="card-body">
                   <img src="img/Avatar1.png" width="45px">
                     <span class="Nome">Fulano</span>
-                    <div class="naoesta">
-                   <!--   <button id="sidebarToggleTop" class="btn btn-warning btn-circle">
-                    <i class="fas fa-exclamation-triangle"></i>
-          </button>-->
-                    <a href="#" class="btn btn-warning btn-icon-split">
+                  <a href="#" class="d-none d-sm-inline-block btn btn-warning ">
                     <span class="icon text-white">
                       <i class="fas fa-exclamation-triangle"></i>
+                      Não está na sede!
                     </span>
-                    <span class="text" data-toggle="modal" data-target="#Denuncia">Não esta na sede!</span>
+                  </a>
+                  <a href="#" class="btn-mobile d-sm-none d-inline-block btn btn-warning btn-circle">
+                      <i class="fas fa-exclamation-triangle"></i>
                   </a>
                 </div>
               </div>
