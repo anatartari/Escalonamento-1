@@ -22,23 +22,23 @@
 
 <style type="text/css">
 
-.Nome{
+.container-logo{
+  width: 45px;
+}
+.nome{
   position: relative;
   margin-left: 10px;
   font-size: 1.5em;
-}
-.btn{
-  position: relative;
-  margin-left: 5%;
+  top: 5px;
 }
 .fa-exclamation-triangle{
   position: relative;
   margin-left: -1px;
 }
-.naoesta{
+.btn-danger{
+  float: right;
   position: relative;
-  margin-left: 20%;
-  margin-top: -45px;
+  margin-top: 3px;
 }
 .escrita{
   position: relative;
@@ -53,10 +53,7 @@
 
 <body id="page-top">
 
-<!--Side bar-->
-
     <!-- Content Wrapper -->
-
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
@@ -64,7 +61,7 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-gradient-primary topbar mb-4 static-top shadow navbar-inverse">
-          <a class="container-fluid" href="index.html"><img src="img/engbranco.png" class="logomarca"></a>
+          <a class="container-logo container-fluid" href="index.html"><img src="img/engbranco.png" class="logomarca"></a>
 
           <!-- Topbar Navbar -->
           <div class="container-fluid">
@@ -131,10 +128,7 @@
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Perfil
                 </a>
-                <a href="#" class="dropdown-item">
-                  
-                </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="tables.html">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   RH
                 </a>
@@ -143,7 +137,7 @@
                   Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="hppt://http://www.cimatecjr.com.br/" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Sair
                 </a>
@@ -163,12 +157,21 @@
 
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
+              <div class="card border-left-info shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Meta de Faturamento</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 80.000</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Faturamento Atual</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50K</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -180,12 +183,12 @@
 
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
+              <div class="card border-left-warning shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Faturamento Atual</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">R$ 40,000</div>
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Meta de Faturamento</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">80K</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -201,10 +204,10 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Meta do nucleo</div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Projetos Atuais</div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">60%</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">47</div>
                         </div>
                         <div class="col">
                           <div class="progress progress-sm mr-2">
@@ -227,11 +230,11 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Proxima Reuniao</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">04/12</div>
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Meta de Projetos</div>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">50</div>
                     </div>
                     <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-gray-300"></i>
+                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
                     </div>
                   </div>
                 </div>
@@ -254,11 +257,10 @@
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-header">Período:</div>
+                      <a class="dropdown-item" href="#">Anual</a>
+                      <a class="dropdown-item" href="#">Trimestral</a>
+                      <a class="dropdown-item" href="#">Mensal</a>
                     </div>
                   </div>
                 </div>
@@ -276,19 +278,7 @@
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3   d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Escalonamento da semana</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
+                  <h6 class="m-0 font-weight-bold text-primary">Escalonamento da Semana</h6>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
@@ -311,42 +301,55 @@
           <!-- Content Row -->
           <div class="row">
 
+<!-- <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Sair
+                </a> -->
+
             <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-5">
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Quem esta na sede:</h6>
                 </div>
                 <div class="card-body">
                   <img src="img/Avatar1.png" width="45px">
-                    <span class="Nome">Fulano</span>
-                  <a href="#" class="d-none d-sm-inline-block btn btn-danger ">
+                    <span class="nome">Fulano</span>
+                  <a data-toggle="modal" data-target="#Denuncia" href="#" class="d-none d-sm-inline-block btn btn-danger ">
                     <span class="icon text-white">
                       <i class="fas fa-exclamation-triangle"></i>
                       Não está na sede!
                     </span>
                   </a>
-                  <a href="#" class="btn-mobile d-sm-none d-inline-block btn btn-danger btn-circle">
+                  <a href="#" data-toggle="modal" data-target="#Denuncia" class="btn-mobile d-sm-none d-inline-block btn btn-danger btn-circle">
                       <i class="fas fa-exclamation-triangle"></i>
                   </a>
                 </div>
-              </div>
-            </div>
-            <!--CONFIRMAÇAO DE DENUNCIA-->
-            <div class="modal fade" id="Denuncia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Você esta preste a denunciar alguem...</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">×</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">Você tem certeza que ele ou ela nao esta na sede?</div>
-                  <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-                    <a class="btn btn-primary" href="#">Sim, tenho certeza</a>
-                  </div>
+                <div class="card-body">
+                  <img src="img/Avatar1.png" width="45px">
+                    <span class="nome">Fulano</span>
+                  <a data-toggle="modal" data-target="#Denuncia" href="#" class="d-none d-sm-inline-block btn btn-danger ">
+                    <span class="icon text-white">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      Não está na sede!
+                    </span>
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#Denuncia" class="btn-mobile d-sm-none d-inline-block btn btn-danger btn-circle">
+                      <i class="fas fa-exclamation-triangle"></i>
+                  </a>
+                </div>
+                 <div class="card-body">
+                  <img src="img/Avatar1.png" width="45px">
+                    <span class="nome">Fulano</span>
+                  <a data-toggle="modal" data-target="#Denuncia" href="#" class="d-none d-sm-inline-block btn btn-danger ">
+                    <span class="icon text-white">
+                      <i class="fas fa-exclamation-triangle"></i>
+                      Não está na sede!
+                    </span>
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#Denuncia" class="btn-mobile d-sm-none d-inline-block btn btn-danger btn-circle">
+                      <i class="fas fa-exclamation-triangle"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -441,11 +444,30 @@
         <div class="modal-body">Selecione sair para ficar offline</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="CIMATEC jr.html">Sair</a>
+          <a class="btn btn-primary" href="http://www.cimatecjr.com.br/">Sair</a>
         </div>
       </div>
     </div>
   </div>
+
+            <!--CONFIRMAÇAO DE DENUNCIA-->
+            <div class="modal fade" id="Denuncia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Você está prestes a denunciar alguém...</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">Você tem certeza que esta pessoa não está na sede?</div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="#">Sim</a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
