@@ -27,15 +27,13 @@
   margin-left: 10px;
   font-size: 1.5em;
 }
-
 .btn{
   position: relative;
   margin-left: 5%;
 }
-
-.btn-mobile{
+.fa-exclamation-triangle{
   position: relative;
-  margin-left: 5%;
+  margin-left: -1px;
 }
 .naoesta{
   position: relative;
@@ -47,15 +45,8 @@
   margin-left: 100px;
   margin-top: -70px;
 }
-@media (min-width: 920px){
-  .logomarca{
-    width: 30%;
-  }
-}
-@media (min-width: 400px){
-  .logomarca{
-    width: 30%;
-  }
+.logomarca{
+  width: 45px;
 }
 
 </style>
@@ -73,7 +64,7 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-gradient-primary topbar mb-4 static-top shadow navbar-inverse">
-          <!-- <div class="container-fluid"><img src="img/logobranca.png" class="logomarca"></div> -->
+          <a class="container-fluid" href="index.html"><img src="img/engbranco.png" class="logomarca"></a>
 
           <!-- Topbar Navbar -->
           <div class="container-fluid">
@@ -166,12 +157,6 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-
-          <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800"></h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i>Suposto QRcode</a>
-          </div>
 
           <!-- Content Row -->
           <div class="row">
@@ -335,37 +320,36 @@
                 <div class="card-body">
                   <img src="img/Avatar1.png" width="45px">
                     <span class="Nome">Fulano</span>
-                  <a href="#" class="d-none d-sm-inline-block btn btn-warning ">
+                  <a href="#" class="d-none d-sm-inline-block btn btn-danger ">
                     <span class="icon text-white">
                       <i class="fas fa-exclamation-triangle"></i>
                       Não está na sede!
                     </span>
                   </a>
-                  <a href="#" class="btn-mobile d-sm-none d-inline-block btn btn-warning btn-circle">
+                  <a href="#" class="btn-mobile d-sm-none d-inline-block btn btn-danger btn-circle">
                       <i class="fas fa-exclamation-triangle"></i>
                   </a>
                 </div>
               </div>
             </div>
-<!--CONFIRMAÇAO DE DENUNCIA-->
-  <div class="modal fade" id="Denuncia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Você esta preste a denunciar alguem...</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Você tem certeza que ele ou ela nao esta na sede?</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
-          <a class="btn btn-primary" href="#">Sim, tenho certeza</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
+            <!--CONFIRMAÇAO DE DENUNCIA-->
+            <div class="modal fade" id="Denuncia" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Você esta preste a denunciar alguem...</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">Você tem certeza que ele ou ela nao esta na sede?</div>
+                  <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="#">Sim, tenho certeza</a>
+                  </div>
+                </div>
+              </div>
+            </div>
               
             <div class="col-lg-6 mb-4">
 
